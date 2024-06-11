@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+  <link rel="stylesheet" href="style1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+    integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+    integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    
+    .top-nav{
+      margin-left: 90px;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* Three columns with equal width */
+      gap: 0;
+      /* Adjust the gap between columns */
+    }
+
+    .card1 {
+      height: 89vh;
+      position: relative;
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .card1:hover {
+      height: 89.1vh;
+      transition: 0.1s
+        /* Smooth transition with duration of 0.3s and ease timing function */
+    }
+
+
+    .card1 a {
+      text-align: center;
+      color: white;
+      font-weight: 600;
+      position: absolute;
+      bottom: 60px;
+      max-width: 90%;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(0px);
+      padding: 10px;
+    }
+
+    .card2 h2 {
+      text-align: center;
+      position: absolute;
+      max-width: 60%;
+      padding-left: 330px;
+    }
+
+    .card2 p {
+      position: absolute;
+      padding-left: 360px;
+      padding-top: 70px;
+      max-width:55%;
+    }
+
+    .card2 {
+      border: 2px solid black;
+      height: 45vh;
+      width: 24vw;
+      margin-left: 15px;
+      margin-top: 45px;
+    }
+
+    .card3 {
+      border: 2px solid black;
+      height: 45vh;
+      width: 33vw;
+      margin-left:270%;
+      margin-top: 53px;
+    }
+
+    .row h1 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      margin-left: 26px;
+      /* background-color: #ed0c0c; */
+    }
+    .one {
+      width: 6vw;
+      background-color: #be0808;
+    }
+
+    .two {
+      width: 8vw;
+      background-color: #9fdeaf;
+    }
+
+    .three {
+      width: 6vw;
+      background-color: #f48a08;
+      color: white;
+    }
+
+    .four {
+      width: 7vw;
+      background-color: #ed0c0c;
+      color: white;
+    }
+
+    .vertical-line {
+    border-left: 2px solid red;
+    height: 240px; 
+    margin-left:250%; 
+   }
+
+   .col-4{
+    margin-top: 45px;
+   }
+   footer {
+    background: #2a342b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-logo {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.footer-socials a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.footer-low {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-low div {
+    flex: 1;
+}
+
+.footer-low h3 {
+    margin-bottom: 15px;
+}
+
+.footer-low p {
+    margin: 5px 0;
+}
+
+.footer-low a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    padding: 6px;
+    background-color: #556307;
+    color: rgb(229, 255, 0);
+}
+
+.social-links {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+.social-links h3 {
+    padding: 0;
+}
+
+.social-link {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.social-link a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="site-main-wrapper">
+    <header>
+      <nav id="main-nav" class="flex items-center justify-between ">
+        <div class="left flex items-center">
+          <div class="branding">
+            <h2></h2>
+          </div>
+          <img src="new logo_processed.jpg" style="height: 80px; width: 90px; margin-left: -50px;">
+          <div class="top-nav">
+            <a href="index.html" class="custom-link" style="color: black; text-decoration: none;">Home</a>
+            <a href="index2.html" class="custom-link" style="color: black; text-decoration: none;">About</a>
+            <a href="registeration.html" class="custom-link"
+              style="color: black; text-decoration: none;">Registration</a>
+            <a href="form.html" class="custom-link" style="color: black; text-decoration: none;">Login</a>
+            <a href="#" class="custom-link" style="color: black; text-decoration: none;">Contact us</a>
+          </div>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search.." name="search">
+        </div>
+      </nav>
+    </header>
+    <div class="card-container">
+      <div class="card1"
+        style="background-image: url('new1.jpg');  background-size: cover;background-position: center;">
+        <a>
+          <h2>Mercedes’ Lead Designer Talks to Euronews
+            About Future</h2>
+        </a>
+      </div>
+      <div class="card1"
+        style="background-image: url('new2.jpg');  background-size: cover;background-position: center;">
+        <a>
+          <h2>Mercedes’ Lead Designer Talks to Euronews
+            About Future</h2>
+        </a>
+      </div>
+      <div class="card1"
+        style="background-image: url('new3.jpg');  background-size: cover;background-position: center;">
+        <a>
+          <h2>Mercedes’ Lead Designer Talks to Euronews
+            About Future</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="row" style="width: 100%;height: 50%;">
+    <h1>Latest In Tech</h1>
+    <hr>
+    <div class="col-8">
+      <div class="card2" style="background-image: url('let1.jpg');  background-size: cover;background-position: center;">
+        <h5 class="one"> GADGETS</h5>
+        <h2>Bose Line of Products on the show:
+          Showroom Open Now in Dubai
+        </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis molestias ipsum id? Unde hic est
+          temporibus animi distinctio dolorum quis rem molestias aliquid voluptatum inventore nisi optio quisquam, eius
+          labore!</p>
+          <div class="vertical-line">
+          </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <video width="400" height="270" controls>
+        <source src="gad.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>  
+    </div>
+  </div>
+
+  <div class="row" style="width: 100%;height: 50%;">
+    <div class="col-8">
+      <div class="card2" style="background-image: url('let2.jpg');  background-size: cover;background-position: center;">
+        <h5 class="two"> TECHNOLOGY</h5>
+        <h2>Bose Line of Products on the show:
+          Showroom Open Now in Dubai
+        </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis molestias ipsum id? Unde hic est
+          temporibus animi distinctio dolorum quis rem molestias aliquid voluptatum inventore nisi optio quisquam, eius
+          labore!</p>
+          <div class="vertical-line">
+          </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <video width="400" height="270" controls>
+        <source src="tech.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>  
+    </div>
+  </div>
+
+
+  <div class="row" style="width: 100%;height: 50%;">
+    <div class="col-8">
+      <div class="card2" style="background-image: url('let3.jpg');  background-size: cover;background-position: center;">
+        <h5 class="three">ROBOTICS</h5>
+        <h2>Bose Line of Products on the show:
+          Showroom Open Now in Dubai
+        </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis molestias ipsum id? Unde hic est
+          temporibus animi distinctio dolorum quis rem molestias aliquid voluptatum inventore nisi optio quisquam, eius
+          labore!</p>
+          <div class="vertical-line">
+          </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <video width="400" height="270" controls>
+        <source src="robo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>  
+    </div>
+  </div>
+
+  <div class="row" style="width: 100%;height: 50%;">
+    <div class="col-8">
+      <div class="card2" style="background-image: url('let4.jpg');  background-size: cover;background-position: center;">
+        <h5 class="four"> AUTOMOBILE</h5>
+        <h2>Bose Line of Products on the show:
+          Showroom Open Now in Dubai
+        </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis molestias ipsum id? Unde hic est
+          temporibus animi distinctio dolorum quis rem molestias aliquid voluptatum inventore nisi optio quisquam, eius
+          labore!</p>
+          <div class="vertical-line">
+          </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <video width="400" height="270" controls>
+        <source src="auto.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>  
+    </div>
+  </div>
+</body>
+
+<footer style="background-color: rgb(48, 52, 50);">
+  <h1 class="footer-logo">BLOG BUZZ</h1>
+ 
+  <div class="footer-low" style="padding: 20px; border-top: 1px solid #ddd;">
+      <div style="display: inline-block; vertical-align: top; margin-left: 20px;">
+          <h3 style="padding: 0;">COMPANY</h3>
+          <a href="aboutus.html">About us</a><br>
+          <a href="index.html">Blog</a><br>
+          <a href="#">Contact us</a><br>
+          <a href="index.html">Work</a>
+      </div>
+
+<div class="social-links">
+<h3>SOCIAL</h3>
+<div class="social-link">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+  <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+</div>
+<div class="social-link">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+  <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+</div>
+<div class="social-link">
+  <img src="twitterlogo.png" alt="Twitter Logo">
+  <a href="https://twitter.com/" target="_blank">Twitter</a>
+</div>
+</div>
+
+
+  </div>
+</footer>
+
+
+</html>

@@ -1,0 +1,111 @@
+@import "utility.css";
+:root {
+  --primary: #9fdeaf;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+  --secondary: #03160e;
+}
+#main-nav {
+  height: 2px;
+  background-image: url(contact.jpg);
+  font-weight: 5000px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  background: #c0f4cd;
+}
+.top-nav a:hover{
+     color:wheat;
+     font-size:15px;
+     transition: 0.1s;
+}
+
+.search input {
+    margin-right:330px;
+}
+
+.container {
+  max-width: 1152px;
+  max-height: px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+header nav .left a:hover {
+  color: var(--secondary);
+}
+header nav {
+  padding: 2rem 0;
+}
+header nav .branding {
+  margin-right: 3rem;
+}
+.india{
+    margin-left: 40%;
+    padding-top: 23px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+.row{
+    height: 80vh;
+    border: 1px solid black;
+    display: flex;
+
+    
+}
+.card{
+    height: 80vh;
+    width: 35vw;
+    border: 1px solid black;
+} 
